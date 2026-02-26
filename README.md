@@ -398,9 +398,9 @@ A distributed IDS node is another separate device that also monitors traffic ins
 - **Why:**
 If one IDS device crashes, the other can still detect attacks, making the system more reliable and scalable.
 
-## 17. References
+## 17. Project Development Note
 
-- Original project proposal and refinement used as baseline. See the attached project document for the original scope and details.
+- This project proposal was initially drafted as an internal academic submission. The current README.md represents the first formal and structured version of the proposal, refined for clarity, scope definition, and technical detailing.
 
 <br>
 
