@@ -12,6 +12,20 @@
 
 **Semester:** 2025-2026, Spring.
 
+
+<div align="right">
+
+[![Build / CI](https://img.shields.io/github/actions/workflow/status/SagarBiswas-MultiHAT/Raspi-Mini-IDS_ProjectProposal/ci.yml?branch=main&label=build)](https://github.com/SagarBiswas-MultiHAT/Raspi-Mini-IDS_ProjectProposal/actions/workflows/ci.yml)
+[![Latest Release](https://img.shields.io/github/v/release/SagarBiswas-MultiHAT/Raspi-Mini-IDS_ProjectProposal?sort=semver&label=release)](https://github.com/SagarBiswas-MultiHAT/Raspi-Mini-IDS_ProjectProposal/releases)
+[![License: MIT](https://img.shields.io/github/license/SagarBiswas-MultiHAT/Raspi-Mini-IDS_ProjectProposal?label=license)](LICENSE)
+[![Open Issues](https://img.shields.io/github/issues/SagarBiswas-MultiHAT/Raspi-Mini-IDS_ProjectProposal?label=open%20issues)](https://github.com/SagarBiswas-MultiHAT/Raspi-Mini-IDS_ProjectProposal/issues)
+[![Closed Issues](https://img.shields.io/github/issues-closed/SagarBiswas-MultiHAT/Raspi-Mini-IDS_ProjectProposal?label=closed%20issues)](https://github.com/SagarBiswas-MultiHAT/Raspi-Mini-IDS_ProjectProposal/issues?q=is%3Aissue%20state%3Aclosed)
+[![Docker Pulls](https://img.shields.io/badge/docker%20pulls-publish%20to%20enable-lightgrey)](https://hub.docker.com/)
+[![Coverage](https://img.shields.io/badge/coverage-add%20tests%20%2B%20report-lightgrey)](https://about.codecov.io/)
+[![Docs](https://img.shields.io/badge/docs-github%20pages-blue)](https://sagarbiswas-multihat.github.io/Raspi-Mini-IDS_ProjectProposal/)
+
+</div>
+
 ## 1. Executive Summary
 
 This project proposes a low-cost, practical Embedded Network Intrusion Detection System (Mini-IDS) built on a Raspberry Pi 4. The Mini-IDS will capture network traffic in a controlled lab environment, detect common network attacks using a mix of rule-based and lightweight anomaly detection methods, send real-time alerts by Email and Telegram, and provide a web-based dashboard for visualization and basic automated defense using firewall rules and GPIO alerts. The focus is on making a reproducible, well-documented system that can be evaluated on detection accuracy, latency, and resource usage.
@@ -392,4 +406,3 @@ If one IDS device crashes, the other can still detect attacks, making the system
 *Date: 27-02-2026*
 
 </div>
-
