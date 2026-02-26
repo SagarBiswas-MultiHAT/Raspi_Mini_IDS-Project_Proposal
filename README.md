@@ -258,7 +258,7 @@ This structure keeps low-level packet capture, detection logic, response handlin
 
 Below is the architecture diagram for the Mini-IDS. It shows the Raspberry Pi boundary, the real-time data plane components, the detection layer, the response and enforcement components, and external services.
 
-![Mini-IDS architecture diagram](assets/architecture-diagram.png)
+![Mini-IDS architecture diagram](docs/assets/architecture-diagram.png)
 
 ### Diagram Summary
 
@@ -281,7 +281,7 @@ Why this is safe and neat:
 
 Below is the sequence diagram that details real-time packet processing, parallel detection, alerting, and the administrative control flow.
 
-![Mini-IDS sequence diagram](assets/sequence-diagram.png)
+![Mini-IDS sequence diagram](docs/assets/architecture-diagram.png)
 
 ### Diagram Summary
 
@@ -301,7 +301,25 @@ Why this workflow is smart:
 
 - The system captures packets very fast, checks them in parallel so it is quick, logs everything for later, and only takes action when needed. Admins can change settings without stopping the system.
 
-## 15. Quick Q/A (Important Terms)
+## 15. Limitations and Future Work
+
+### Current Limitations
+
+- This Mini-IDS is tested in a controlled lab setup, so real-world internet traffic may be more complex.
+- Rule thresholds still need manual tuning for different network environments.
+- Raspberry Pi hardware is resource-limited, so very high traffic rates can affect performance.
+- Automatic blocking with `iptables` is helpful, but wrong thresholds can block legitimate users.
+- The current anomaly logic is lightweight and may miss some advanced or stealthy attack patterns.
+
+### Future Work
+
+- Add a lightweight ML-based detector and compare its performance with the current rule + statistical approach.
+- Build a distributed setup using multiple ESP32/Raspberry Pi nodes for wider network monitoring.
+- Add smarter alert prioritization to reduce notification noise.
+- Improve dashboard analytics with longer trend history and attack heatmaps.
+- Extend protocol coverage (for example DNS tunneling and application-layer attack patterns).
+
+## 16. Quick Q/A (Important Terms)
 
 #### ICMP Flood
 
@@ -379,24 +397,6 @@ A distributed IDS node is another separate device that also monitors traffic ins
 
 - **Why:**
 If one IDS device crashes, the other can still detect attacks, making the system more reliable and scalable.
-
-## 16. Limitations and Future Work
-
-### Current Limitations
-
-- This Mini-IDS is tested in a controlled lab setup, so real-world internet traffic may be more complex.
-- Rule thresholds still need manual tuning for different network environments.
-- Raspberry Pi hardware is resource-limited, so very high traffic rates can affect performance.
-- Automatic blocking with `iptables` is helpful, but wrong thresholds can block legitimate users.
-- The current anomaly logic is lightweight and may miss some advanced or stealthy attack patterns.
-
-### Future Work
-
-- Add a lightweight ML-based detector and compare its performance with the current rule + statistical approach.
-- Build a distributed setup using multiple ESP32/Raspberry Pi nodes for wider network monitoring.
-- Add smarter alert prioritization to reduce notification noise.
-- Improve dashboard analytics with longer trend history and attack heatmaps.
-- Extend protocol coverage (for example DNS tunneling and application-layer attack patterns).
 
 ## 17. References
 
