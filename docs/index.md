@@ -12,24 +12,7 @@
 
 **Semester:** 2025-2026, Spring.
 
-
-<div align="right">
-
-[![Build / CI](https://img.shields.io/github/actions/workflow/status/SagarBiswas-MultiHAT/Raspi-Mini-IDS_ProjectProposal/ci.yml?branch=main&label=build)](https://github.com/SagarBiswas-MultiHAT/Raspi-Mini-IDS_ProjectProposal/actions/workflows/ci.yml)
-&nbsp;
-[![License: MIT](https://img.shields.io/github/license/SagarBiswas-MultiHAT/Raspi-Mini-IDS_ProjectProposal?label=license)](LICENSE)
-&nbsp;
-[![Open Issues](https://img.shields.io/github/issues/SagarBiswas-MultiHAT/Raspi-Mini-IDS_ProjectProposal?label=open%20issues)](https://github.com/SagarBiswas-MultiHAT/Raspi-Mini-IDS_ProjectProposal/issues)
-&nbsp;
-[![Closed Issues](https://img.shields.io/github/issues-closed/SagarBiswas-MultiHAT/Raspi-Mini-IDS_ProjectProposal?label=closed%20issues)](https://github.com/SagarBiswas-MultiHAT/Raspi-Mini-IDS_ProjectProposal/issues?q=is%3Aissue%20state%3Aclosed)
-&nbsp;
-[![Docs](https://img.shields.io/badge/docs-github%20pages-blue)](https://sagarbiswas-multihat.github.io/Raspi-Mini-IDS_ProjectProposal/)
-<!-- &nbsp;
-[![Docker Pulls](https://img.shields.io/badge/docker%20pulls-publish%20to%20enable-lightgrey)](https://hub.docker.com/)
-&nbsp;
-[![Coverage](https://img.shields.io/badge/coverage-add%20tests%20%2B%20report-lightgrey)](https://about.codecov.io/) -->
-
-</div>
+---
 
 ## 1. Executive Summary
 
@@ -258,7 +241,7 @@ This structure keeps low-level packet capture, detection logic, response handlin
 
 Below is the architecture diagram for the Mini-IDS. It shows the Raspberry Pi boundary, the real-time data plane components, the detection layer, the response and enforcement components, and external services.
 
-![Mini-IDS architecture diagram](assets/architecture-diagram.png)
+![Mini-IDS architecture diagram](../assets/architecture-diagram.png)
 
 ### Diagram Summary
 
@@ -281,7 +264,7 @@ Why this is safe and neat:
 
 Below is the sequence diagram that details real-time packet processing, parallel detection, alerting, and the administrative control flow.
 
-![Mini-IDS sequence diagram](assets/sequence-diagram.png)
+![Mini-IDS sequence diagram](../assets/sequence-diagram.png)
 
 ### Diagram Summary
 
