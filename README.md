@@ -1,4 +1,4 @@
-# Project Proposal
+﻿# Project Proposal
 
 **Project Title:** Embedded Network Intrusion Detection System (Mini-IDS) with Real-Time Dashboard.
 
@@ -144,9 +144,96 @@ No paid services are required; GeoLite2 and notification APIs are free to use at
 - Independent alert node in case the main system crashes.
 - Optional future extension: distributed IDS node.
 
-## 12. Repository Layout (Suggested)
+## 12. Repository Layout
 
-![Suggested repository layout](assets/repo-layout.png)
+The repository is organized so each module is easy to find, test, and maintain:
+
+```text
+mini-ids/
+|
+|-- README.md                  # Project overview and setup guide
+|-- LICENSE                    # Open-source license (MIT recommended)
+|-- .gitignore
+|-- requirements.txt           # Python dependencies
+|-- Makefile                   # Build automation for C capture module
+|-- config.yaml                # Default runtime configuration
+|
+|-- capture/                   # High-performance packet capture (C + libpcap)
+|   |-- src/
+|   |   |-- capture.c
+|   |   |-- ring_buffer.c
+|   |   |-- ring_buffer.h
+|   |-- include/
+|   |-- build/
+|   |-- README.md
+|
+|-- core/                      # Core processing logic
+|   |-- preprocessor/
+|   |   |-- flow_builder.py
+|   |   |-- packet_parser.py
+|   |
+|   |-- detector/
+|   |   |-- rules/
+|   |   |   |-- port_scan.py
+|   |   |   |-- icmp_flood.py
+|   |   |   |-- brute_force.py
+|   |   |
+|   |   |-- anomaly/
+|   |   |   |-- ewma.py
+|   |   |   |-- zscore.py
+|   |   |
+|   |   |-- engine.py
+|   |
+|   |-- database/
+|       |-- models.py
+|       |-- storage.py
+|
+|-- response/                  # Enforcement & alert handling
+|   |-- firewall.py
+|   |-- alert_service.py
+|   |-- gpio_controller.py
+|   |-- watchdog_interface.py
+|
+|-- dashboard/                 # Web UI
+|   |-- app.py
+|   |-- templates/
+|   |-- static/
+|   |-- websocket.py
+|
+|-- configs/                   # Environment-based configs
+|   |-- development.yaml
+|   |-- production.yaml
+|
+|-- tests/                     # Testing & traffic simulation
+|   |-- unit/
+|   |-- integration/
+|   |-- traffic_simulation/
+|   |   |-- nmap_scripts/
+|   |   |-- hping_tests/
+|   |   |-- replay_pcaps/
+|   |-- sample_pcaps/
+|
+|-- scripts/                   # Utility scripts
+|   |-- setup.sh
+|   |-- run.sh
+|   |-- reset_firewall.sh
+|
+|-- docs/                      # Documentation
+|   |-- architecture.md
+|   |-- sequence_flow.md
+|   |-- performance_report.md
+|   |-- threat_model.md
+|   |-- viva_notes.md
+|
+|-- docker/                    # Containerization
+|   |-- Dockerfile
+|   |-- docker-compose.yml
+|
+|-- ci/                        # Continuous Integration
+    |-- github-actions.yml
+```
+
+This structure keeps low-level packet capture, detection logic, response handling, dashboard, and testing clearly separated. It should make team collaboration and future scaling much easier.
 
 ## 13. Architecture Diagram
 
@@ -244,9 +331,9 @@ Why this workflow is smart:
 - **What:**
 UART is a simple communication method between two devices using two wires:
 
-    * TX (Transmit) → sends data
+    * TX (Transmit) => sends data
 
-    * RX (Receive) → receives data
+    * RX (Receive) => receives data
 
 If Pi TX connects to ESP32 RX, the Pi can send messages to ESP32.
 
@@ -258,8 +345,8 @@ I2C (Inter Integrated Circuit)
 - **What:**
 I2C is a communication protocol that uses only two wires:
 
-    * SDA (Serial Data) → carries data
-    * SCL (Serial Clock) → controls timing
+    * SDA (Serial Data) => carries data
+    * SCL (Serial Clock) => controls timing
 
 Multiple devices can share the same two wires.
 
@@ -305,3 +392,4 @@ If one IDS device crashes, the other can still detect attacks, making the system
 *Date: 27-02-2026*
 
 </div>
+
