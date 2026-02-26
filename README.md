@@ -15,15 +15,15 @@
 
 <div align="right">
 
-[![Build / CI](https://img.shields.io/github/actions/workflow/status/SagarBiswas-MultiHAT/Raspi-Mini-IDS_ProjectProposal/ci.yml?branch=main&label=build)](https://github.com/SagarBiswas-MultiHAT/Raspi-Mini-IDS_ProjectProposal/actions/workflows/ci.yml)
+[![Build / CI](https://img.shields.io/github/actions/workflow/status/SagarBiswas-MultiHAT/Raspi_Mini_IDS-Project_Proposal/ci.yml?branch=main&label=build)](https://github.com/SagarBiswas-MultiHAT/Raspi_Mini_IDS-Project_Proposal/actions/workflows/ci.yml)
 &nbsp;
-[![License: MIT](https://img.shields.io/github/license/SagarBiswas-MultiHAT/Raspi-Mini-IDS_ProjectProposal?label=license)](LICENSE)
+[![License: MIT](https://img.shields.io/github/license/SagarBiswas-MultiHAT/Raspi_Mini_IDS-Project_Proposal?label=license)](LICENSE)
 &nbsp;
-[![Open Issues](https://img.shields.io/github/issues/SagarBiswas-MultiHAT/Raspi-Mini-IDS_ProjectProposal?label=open%20issues)](https://github.com/SagarBiswas-MultiHAT/Raspi-Mini-IDS_ProjectProposal/issues)
+[![Open Issues](https://img.shields.io/github/issues/SagarBiswas-MultiHAT/Raspi_Mini_IDS-Project_Proposal?label=open%20issues)](https://github.com/SagarBiswas-MultiHAT/Raspi_Mini_IDS-Project_Proposal/issues)
 &nbsp;
-[![Closed Issues](https://img.shields.io/github/issues-closed/SagarBiswas-MultiHAT/Raspi-Mini-IDS_ProjectProposal?label=closed%20issues)](https://github.com/SagarBiswas-MultiHAT/Raspi-Mini-IDS_ProjectProposal/issues?q=is%3Aissue%20state%3Aclosed)
+[![Closed Issues](https://img.shields.io/github/issues-closed/SagarBiswas-MultiHAT/Raspi_Mini_IDS-Project_Proposal?label=closed%20issues)](https://github.com/SagarBiswas-MultiHAT/Raspi_Mini_IDS-Project_Proposal/issues?q=is%3Aissue%20state%3Aclosed)
 &nbsp;
-[![Docs](https://img.shields.io/badge/docs-github%20pages-blue)](https://sagarbiswas-multihat.github.io/Raspi-Mini-IDS_ProjectProposal/)
+[![Docs](https://img.shields.io/badge/docs-github%20pages-blue)](https://sagarbiswas-multihat.github.io/Raspi_Mini_IDS-Project_Proposal/)
 <!-- &nbsp;
 [![Docker Pulls](https://img.shields.io/badge/docker%20pulls-publish%20to%20enable-lightgrey)](https://hub.docker.com/)
 &nbsp;

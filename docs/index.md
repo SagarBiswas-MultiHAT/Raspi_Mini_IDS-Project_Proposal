@@ -1,6 +1,4 @@
-﻿# Project Proposal
-
-**Project Title:** Embedded Network Intrusion Detection System (Mini-IDS) with Real-Time Dashboard.
+﻿**Project Title:** Embedded Network Intrusion Detection System (Mini-IDS) with Real-Time Dashboard.
 
 **Course:** MICROPROCESSOR AND EMBEDDED SYSTEM. 
 
