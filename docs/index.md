@@ -384,12 +384,10 @@ If one IDS device crashes, the other can still detect attacks, making the system
 
 - Original project proposal and refinement used as baseline. See the attached project document for the original scope and details.
 
-<br>
-
 <div align="right">
 
-*Prepared by: Sagar Biswas and team*  
+***Prepared by: Sagar Biswas and team***
 
-*Date: 27-02-2026*
+***Date: 27-02-2026***
 
 </div>
