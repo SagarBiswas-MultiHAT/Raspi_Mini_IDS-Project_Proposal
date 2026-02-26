@@ -386,8 +386,6 @@ If one IDS device crashes, the other can still detect attacks, making the system
 
 <div align="right">
 
-***Prepared by: Sagar Biswas and team***
-
-***Date: 27-02-2026***
+<p><strong>Prepared by: Sagar Biswas and team | Date: 27-02-2026</strong></p>
 
 </div>
